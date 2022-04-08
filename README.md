@@ -60,4 +60,4 @@ For this project, I have chosen the jewelry reviews dataset from Amazon Review a
 
 Given that only 52% of the jewelry reviews had a 5 star rating, I would not agree that there is a positivity bias for the Vine program.  
 
-An additional analysis to confirm if there is positivity bias is comparing the number of verified purchase between the Vine and non-Vine reviews.
+An additional analysis to confirm if there is positivity bias is comparing the number of verified purchases between the Vine and non-Vine reviews.
