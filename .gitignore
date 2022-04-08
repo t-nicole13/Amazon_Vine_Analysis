@@ -6,3 +6,6 @@ Amazon_Reviews_ETL_starter_code.ipynb
 
 # ignore large dataset
 amazon_reviews_us_Jewelry_v1_00.tsv
+
+# ignore images
+images
