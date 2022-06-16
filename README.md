@@ -1,7 +1,7 @@
 # Amazon_Vine_Analysis
 
 ## Objective 
-For this project, I wanted to analyze if there was any customer bias if they were paid to review products.  I chose the jewelry reviews dataset from Amazon Reviews to complete my analysis.  This dataset contains both paid and unpaid reviews.  The paid reviews are from customers who are apart of the Amazon Vine Program.  
+For this project, I wanted to analyze if there was any positivity bias if customers were paid to review products.  I chose the jewelry reviews dataset from Amazon Reviews to complete my analysis.  This dataset contains both paid and unpaid reviews.  The paid reviews are from customers who are apart of the Amazon Vine Program.  
 
 Amazon Vine invites the most trusted reviewers on Amazon to post opinions about products to help their fellow customers make informed purchase decisions.    I used PySpark functions to determine if there is any bias toward favorable reviews from Vine members in the dataset. 
 
