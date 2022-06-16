@@ -1,13 +1,20 @@
 # Amazon_Vine_Analysis
 
 ## Objective 
-For this project, I have chosen the jewelry reviews dataset from Amazon Review and will use PySpark to perform the ETL process to extract, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin.  Additionally, I will use PySpark to determine if there is any bias toward favorable reviews from Vine members in your dataset.  
+I chose the jewelry reviews dataset from Amazon Reviews and used PySpark to perform the ETL process to extract, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin.  
+
+Amazon Vine invites the most trusted reviewers on Amazon to post opinions about products to help their fellow customers make informed purchase decisions.  I used PySpark to determine if there is any bias toward favorable reviews from Vine members in the dataset.  
 
 
 ### Tasks
-- Deliverable 1: Perform ETL on Amazon Product Reviews
-- Deliverable 2: Determine Bias of Vine Reviews
-- Deliverable 3: A Written Report on the Analysis (README.md)
+- Perform ETL on Amazon Product Reviews
+  1. Extracted the jewelry dataset into a Spark DataFrame.
+  2. Created a customer's table DataFrame.
+  3. Created a product's table DataFrame.
+  4. Created the review id DataFrame.
+  5. Combined columns from the previously created DataFrames to create a Vine table.
+  6. Connected to the AWS RDS instance and loaded each DataFrame to its own table in pgAdmin.
+- Determine Bias of Vine Reviews
 
 ## Resources
 ### Tools/Language
@@ -18,9 +25,11 @@ For this project, I have chosen the jewelry reviews dataset from Amazon Review a
 - AWS
 
 ### Sites/Data
+- https://www.amazon.com/vine/about (Amazon Vine)
+
 - https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt (datasets to choose from)
 
-- https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Jewelry_v1_00.tsv.gz (project dataset)
+- https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Jewelry_v1_00.tsv.gz (jewelry dataset)
 
 - https://data-hacks.com/convert-pyspark-dataframe-column-from-string-to-int-type-python (fixed error received while loading vine_df, converted star_rating column from string to integer)
 
