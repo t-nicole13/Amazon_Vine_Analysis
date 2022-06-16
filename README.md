@@ -1,9 +1,11 @@
 # Amazon_Vine_Analysis
 
 ## Objective 
-I chose the jewelry reviews dataset from Amazon Reviews and used PySpark to perform the ETL process to extract, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin.  
+For this project, I wanted to analyze if there was any customer bias if they were paid to review products.  I chose the jewelry reviews dataset from Amazon Reviews to complete my analysis.  This dataset contains both paid and unpaid reviews.  The paid reviews are from customers who are apart of the Amazon Vine Program.  
 
-Amazon Vine invites the most trusted reviewers on Amazon to post opinions about products to help their fellow customers make informed purchase decisions.  I used PySpark to determine if there is any bias toward favorable reviews from Vine members in the dataset.  
+Amazon Vine invites the most trusted reviewers on Amazon to post opinions about products to help their fellow customers make informed purchase decisions.    I used PySpark functions to determine if there is any bias toward favorable reviews from Vine members in the dataset. 
+
+Additionally, I used PySpark to perform the ETL process to extract, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin for review.  
 
 
 ### Tasks
@@ -41,7 +43,6 @@ Amazon Vine invites the most trusted reviewers on Amazon to post opinions about 
 - https://data-hacks.com/convert-pyspark-dataframe-column-from-string-to-int-type-python (fixed error received while loading vine_df, converted star_rating column from string to integer)
 
 
-
 ## Results
 
 ### Vine Reviews
@@ -73,7 +74,7 @@ Amazon Vine invites the most trusted reviewers on Amazon to post opinions about 
 ![Getting Started](images/per_unpaid.png)
 
 ## Summary
-
-Given that only 52% of the jewelry reviews had a 5 star rating, I would not agree that there is a positivity bias for the Vine program.  
-
-An additional analysis to confirm if there is positivity bias is comparing the number of verified purchases between the Vine and non-Vine reviews.
+- There was a least 7000 more total reviews for the unpaid members.
+- Given that only 52% of the paid jewelry reviews had a 5 star rating and the unpaid reviews had about 58%, I cannot conclude that there is a positivity bias for reviewers apart of the Vine program.  
+- I don't believe that there is enough paid reviews to determine bias because there was only a total of 21 reviews available for analysis.
+- In the future, I would probably not filter for reviews that have at least 20 votes to increase the number of paid reviews to be analyzed.
