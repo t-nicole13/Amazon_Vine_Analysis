@@ -31,7 +31,7 @@ Additionally, I used PySpark to perform the ETL process to extract, transform th
 - Google CoLab
 - PgAdmin 4 Version 6.1
 - PostgreSQL 12.10-R1 
-- AWS
+- Amazon Web Services (AWS)
 
 ### Sites/Data
 - https://www.amazon.com/vine/about (Amazon Vine)
